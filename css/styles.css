@@ -261,6 +261,7 @@ h5 a:hover:after {
 .container-general #about-picture img {
   border-radius: 50px;
   border: 10px double #8a2be2;
+  vertical-align: middle;
 }
 
 .container-general #about-content {
@@ -271,6 +272,20 @@ h5 a:hover:after {
 
 #about-content p:not(:first-child) {
   margin-top: 15px;
+}
+
+#about-content #about-icon a {
+  margin-right: 10px;
+}
+
+#about-content #about-icon a img {
+  vertical-align: middle;
+}
+
+#about-content #about-icon span {
+  vertical-align: middle;
+  font-style: italic;
+  text-decoration: underline;
 }
 
 #about-content ul {
@@ -328,7 +343,6 @@ h5 a:hover:after {
 #job-list button {
   position: relative;
   cursor: pointer;
-  display: flex;
   height: 45px;
   width: 100%;
   background-color: transparent;
@@ -680,10 +694,6 @@ footer #copyright h6 {
 
   /* experience */
 
-  #exp {
-
-  }
-
   #job-list ul {
     width: 90%;
   }
@@ -778,28 +788,31 @@ footer #copyright h6 {
   }
 
   /* work */
+  .work-grid {
+    display: grid;
+    grid-template-rows: auto;
+  }
+
   .work-grid .work-detail-left,
   .work-grid .work-detail-right {
+    text-align: left;
     grid-column: 1 / -1;
-    grid-row: 1 / -1;
+    /* grid-row: 1 / -1; */
   }
 
   .work-grid .work-picture-left,
   .work-grid .work-picture-right {
+    /* margin-top: 30%; */
     grid-column: 1 / -1;
-    grid-row: 1 / -1;
+    grid-row: 2 / -1;
   }
+
 
   .work-detail-left .work-content-left,
   .work-detail-right .work-content-right {
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
-    background-color: rgb(95, 59, 115, 0.7);
-  }
-
-  .work-picture-left a,
-  .work-picture-right a {
-    padding-top: 80px;
+    /* background-color: rgb(95, 59, 115, 0.7); */
   }
 
   .work-detail-left ul {
