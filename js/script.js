@@ -1,3 +1,9 @@
+
+$(document).ready(function(){
+    $('#exp-content div').hide();
+    $('#list-01-ds').show();
+});
+
 // ------------- move to each menu (click action)
 $('.menu li button').on('click', function(){
    let menu = $(this).attr('id');
